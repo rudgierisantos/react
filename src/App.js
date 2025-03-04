@@ -24,12 +24,12 @@ function App() {
 
       <div style={{ flex: 1, padding: "20px" }}>
         <Routes>
-          <Route path={RotasUtil.LOGIN.path} element={<Login />} />
-          <Route path={RotasUtil.MENU.path} element={<Menu />} />
-          <Route path={RotasUtil.DASHBOARD.path} element={<Dashboard />} />
-          <Route path={RotasUtil.CADASTROPESSOA.path} element={<Pessoa />} />
-          <Route path={RotasUtil.USUARIO.path} element={<Usuario />} />
-          <Route path="*" element={<Navigate to={RotasUtil.LOGIN.path} />} />
+          <Route path={RotasUtil.login.path} element={<Login />} />
+          <Route path={RotasUtil.menu.path} element={<Menu />} />
+          <Route path={RotasUtil.dashboard.path} element={<Dashboard />} />
+          <Route path={RotasUtil.cadastroPessoa.path} element={<Pessoa />} />
+          <Route path={RotasUtil.usuario.path} element={<Usuario />} />
+          <Route path="*" element={<Navigate to={RotasUtil.login.path} />} />
         </Routes>
       </div>
     </div>

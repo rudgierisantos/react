@@ -3,11 +3,11 @@ class RotasUtil {
         Object.freeze(this);
     }
 
-    static LOGIN = { path: '/login' };
-    static MENU = { path: '/menu' };
-    static DASHBOARD = { path: '/dashboard' };
-    static CADASTROPESSOA = { path: '/cadastro/pessoa' };
-    static USUARIO = { path: '/usuario' };
+    static login = { path: '/login' };
+    static menu = { path: '/menu' };
+    static dashboard = { path: '/dashboard' };
+    static cadastroPessoa = { path: '/cadastro/pessoa' };
+    static usuario = { path: '/usuario' };
 }
 
 export default RotasUtil;

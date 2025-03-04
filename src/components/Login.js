@@ -4,6 +4,7 @@ import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import RotasUtil from "../Util/RotasUtil";
 
 function Login() {
     const [username, setUsername] = useState('');
@@ -12,7 +13,7 @@ function Login() {
 
     const handleLogin = () => {
         if (username === 'admin' && password === 'admin') {
-            navigate('/dashboard');
+            navigate(RotasUtil.dashboard.path);
         } else {
             alert('Usuário ou senha inválidos');
         }

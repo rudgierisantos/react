@@ -1,0 +1,13 @@
+
+.titulo-menu {
+    font-weight: bold;
+    font-size: 24px;
+    color: #6b7280;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 280px;
+    padding-top: 24px;
+}

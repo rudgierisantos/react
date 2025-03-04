@@ -1,8 +1,7 @@
-import { Button } from "primereact/button";
-import { Menubar } from "primereact/menubar";
-import { useNavigate } from "react-router-dom";
 import { PanelMenu } from 'primereact/panelmenu';
+import { useNavigate } from "react-router-dom";
 import RotasUtil from "../Util/RotasUtil";
+import '../styles/Menu.css';
 
 
 function Menu() {
@@ -12,7 +11,7 @@ function Menu() {
         {
             label: 'Dashboard',
             icon: 'pi pi-fw pi-file',
-            command: () => navigate(RotasUtil.DASHBOARD.path),
+            command: () => navigate(RotasUtil.dashboard.path),
         },
         {
             label: 'Cadastro',
@@ -21,7 +20,7 @@ function Menu() {
                 {
                     label: 'Pessoa',
                     icon: 'pi pi-fw pi-user',
-                    command: () => navigate(RotasUtil.CADASTROPESSOA.path),
+                    command: () => navigate(RotasUtil.cadastroPessoa.path),
                 }
             ]
         },
@@ -32,14 +31,14 @@ function Menu() {
                 {
                     label: 'Usuário',
                     icon: 'pi pi-fw pi-user-plus',
-                    command: () => navigate(RotasUtil.USUARIO.path),
+                    command: () => navigate(RotasUtil.usuario.path),
                 },
             ]
         },
         {
             label: 'Sair',
             icon: 'pi pi-fw pi-sign-out',
-            command: () => navigate(RotasUtil.LOGIN.path),
+            command: () => navigate(RotasUtil.login.path),
         },
 
         
@@ -47,8 +46,8 @@ function Menu() {
 
     return (
         <div className="p-4">
-          <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#6b7280', display: 'flex', justifyContent: 'center' }}>RSNTEC</span>
-            <PanelMenu model={items} style={{ width: '280px', paddingTop: '24px' }} />
+          <span className="titulo-menu">RSNTEC</span>
+            <PanelMenu model={items} pt={{ root: { className: 'menu' } }} />
         </div>
     );
 }
